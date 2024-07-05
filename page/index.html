@@ -5,10 +5,19 @@
     <link rel="icon" href="/scribe_systems_logo_small.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scribe Cloud</title>
-    <script type="module" crossorigin src="/assets/index-DHX0hvTC.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Bkudoir2.css">
+    <script type="module" crossorigin src="/assets/index-CfChs9rf.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BKjrlo5s.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </body>
 </html>
